@@ -1,0 +1,33 @@
+DECLARE Number1 : REAL
+DECLARE Number2 : REAL
+DECLARE Operation : STRING
+DECLARE Result : REAL
+
+OUTPUT "enter a number"
+INPUT Number1 
+OUTPUT "enter another number"
+INPUT Number2
+OUTPUT "enter operation (+,-,*,/)"
+INPUT Operation
+IF Operation = "+" THEN
+    Result <- Number1 + Number2
+
+ENDIF 
+IF Operation = "-" THEN
+    Result <- Number1 - Number2
+
+ENDIF 
+IF Operation = "*" THEN
+    Result <- Number1 * Number2
+
+ENDIF 
+IF Operation = "/" THEN
+    Result <- Number1 / Number2     
+
+ENDIF
+IF Operation <> "+" OR "-" OR "*" OR "/" THEN
+    OUTPUT "invalid operator!!!"
+
+ENDIF
+
+OUTPUT "Answer is:", Result 

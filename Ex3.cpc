@@ -1,0 +1,10 @@
+DECLARE Age : INTEGER
+DECLARE Price : INTEGER
+OUTPUT "enter your Age:"
+INPUT Age 
+IF Age >= 18 THEN
+    Price <- 12
+ELSE 
+    Price <- 8    
+ENDIF
+OUTPUT "Ticket price is: s", Price
