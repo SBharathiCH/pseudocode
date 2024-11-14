@@ -1,0 +1,7 @@
+DECLARE Firstname : STRING
+DECLARE Lastname : STRING
+OUTPUT "Hello!! please enter name"
+INPUT Firstname 
+OUTPUT "please enter last name"
+INPUT Lastname
+OUTPUT "welcome", Firstname, Lastname
