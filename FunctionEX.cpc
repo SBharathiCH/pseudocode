@@ -1,0 +1,27 @@
+DECLARE UserNo1 : INTEGER
+DECLARE UserNo2 : INTEGER
+
+FUNCTION Max(Number1 : INTEGER, Number2 : INTEGER) RETURNS INTEGER
+  IF Number1 > Number2 THEN
+    RETURN Number1
+  ELSE
+    RETURN Number2
+  ENDIF
+ENDFUNCTION
+
+FUNCTION Min(Number1 : INTEGER, Number2 : INTEGER) RETURNS INTEGER
+  IF Number1 < Number2 THEN
+    RETURN Number1
+  ELSE
+    RETURN Number2
+  ENDIF
+ENDFUNCTION
+
+OUTPUT "please input first number"
+INPUT UserNo1
+OUTPUT "please input first number"
+INPUT UserNo2
+
+OUTPUT "The max number is ", Max(UserNo1, UserNo2)
+OUTPUT "The max number is ", Min(UserNo1, UserNo2)
+

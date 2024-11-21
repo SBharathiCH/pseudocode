@@ -1,0 +1,8 @@
+DECLARE Games : ARRAY[0:3] OF STRING
+Games[0] <-  "Elder Scorlls"
+Games[1] <-  "skyrim"
+Games[2] <-  "Dark souls"
+Games[3] <-  "Elden Ring"
+FOR Index <- 0 TO 3
+  OUTPUT Games[Index]
+NEXT Index

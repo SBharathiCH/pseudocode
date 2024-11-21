@@ -1,0 +1,24 @@
+DECLARE Rate : STRING
+DECLARE Games : ARRAY[0:2, 0:1] OF STRING
+Games[0,0] <- "GTA 6"
+Games[0,1] <- Rate
+
+Games[1,0] <- "Mini Militia"
+Games[1,1] <- Rate
+
+Games[2,0] <- "Rocket League"
+Games[2,1] <- Rate
+
+FOR Index <- 0 TO 2
+    OUTPUT "rate the game:", Games[Index , 0]
+    INPUT Rate
+    Games[Index, 1] <- Rate
+NEXT Index
+
+
+FOR Row <- 0 TO 2
+    OUTPUT "rate of:", Games[Index , 0] ,"is:", Games[Index,1]
+NEXT Row  
+
+
+
