@@ -1,0 +1,32 @@
+
+DECLARE CorrectUserPin : INTEGER
+DECLARE UserBalance : REAL
+DECLARE Pin : INTEGER
+DECLARE Amount : REAL
+DECLARE Attempts : INTEGER
+
+CorrectUserPin <- 5566
+Attempts <- 0 
+UserBalance <- 435
+MaxAttempts <- 3
+
+
+
+OUTPUT "Welcome to ATM"
+REPEAT
+    OUTPUT "Please enter your card:"
+    OUTPUT "Please enter your PIN:"
+    INPUT Pin
+    Attempts <- Attempts + 1
+    IF Pin = CorrectUserPin THEN
+        OUTPUT "Correct PIN"
+        OUTPUT "Your balance is: ", UserBalance
+    ENDIF
+
+    INPUT   
+
+    IF Attempts = 0 THEN
+        OUTPUT "Too many incorrect attempts. Your account is locked."
+    ENDIF
+
+UNTIL Pin = CorrectUserPin

@@ -1,0 +1,24 @@
+DECLARE correctNum : INTEGER
+DECLARE playerNum : INTEGER
+correctNum <- RAND(101)
+OUTPUT correctNum
+
+REPEAT
+    OUTPUT "Guess the correct Number"
+    INPUT playerNum
+
+    IF playerNum < correctNum THEN
+        OUTPUT "number is too small"
+    ENDIF
+
+    IF playerNum > correctNum THEN
+        OUTPUT "number is too big"
+    ENDIF
+
+UNTIL playerNum = correctNum
+
+IF playerNum = correctNum THEN
+    OUTPUT "Well Done!!!!, You guessed Right!!", correctNum
+ENDIF
+
+

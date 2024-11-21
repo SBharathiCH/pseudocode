@@ -1,0 +1,10 @@
+DECLARE Total : INTEGER
+DECLARE Average : REAL
+FOR Row <- 1 TO 10
+    Total <- Total + Row
+NEXT Row 
+
+OUTPUT "the sum: ", Total
+Average <- Total / 10
+OUTPUT "Ave is: ", Average
+

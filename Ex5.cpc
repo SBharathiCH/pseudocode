@@ -1,0 +1,14 @@
+DECLARE PassWo1 : STRING
+DECLARE PassWo2 : STRING
+
+OUTPUT "Pleas; Enter the New password"
+INPUT PassWo1
+REPEAT
+    OUTPUT "Please, Confirm Your Old password"
+    INPUT PassWo2
+UNTIL PassWo2 = "" OR PassWo1 = PassWo2
+IF PassWo2 = "" THEN
+    OUTPUT"Your password not changed!!"
+ELSE
+    OUTPUT "Your password is changed!!"
+ENDIF
